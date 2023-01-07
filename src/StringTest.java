@@ -21,7 +21,7 @@ public class StringTest {
         System.out.println(Constants.ANSI_BLUE + "------Test Number 3 : using pop method" + Constants.ANSI_RESET);
         System.out.println(Constants.ANSI_PURPLE + "The First element Should be empty" + Constants.ANSI_RESET);
         myQueue.poll();
-        System.out.println(myQueue.toString());
+        System.out.println(myQueue);
         System.out.println(Constants.ANSI_PURPLE + "after using pop again no element in the second part " + Constants.ANSI_RESET);
         myQueue.poll();
         System.out.println(Constants.ANSI_PURPLE + "after using pop 3 more time no value in third part " + Constants.ANSI_RESET);
@@ -51,8 +51,6 @@ public class StringTest {
         Iterator<String> iterator1 = myQueue.iterator();
         while (iterator1.hasNext())
             System.out.println(iterator1.next());
-
-
     }
 
     private static void addMethodForTest(MyQueue<String> myQueue) {
